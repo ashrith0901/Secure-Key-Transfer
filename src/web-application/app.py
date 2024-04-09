@@ -1,6 +1,6 @@
 import os
 import os.path
-from flask import Flask, flash, request, redirect, url_for, render_template, session, send_from_directory, send_file
+from flask import Flask, request, redirect, url_for, render_template, session, send_from_directory, send_file
 from werkzeug.utils import secure_filename
 import DH
 import pickle
@@ -165,5 +165,5 @@ def register_user():
 
 	
 if __name__ == '__main__':
-	app.run(host="0.0.0.0", port=80)
-	# app.run()
+	#app.run(host="0.0.0.0", port=80)
+	app.run()
